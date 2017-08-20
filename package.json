@@ -1,0 +1,35 @@
+{
+  "name": "kylecombes.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio website",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack -p",
+    "build-test": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kylecombes/kylecombes.github.io.git"
+  },
+  "author": "Kyle Combes",
+  "bugs": {
+    "url": "https://github.com/kylecombes/kylecombes.github.io/issues"
+  },
+  "homepage": "https://github.com/kylecombes/kylecombes.github.io#readme",
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10",
+    "style-loader": "^0.18.2"
+  },
+  "devDependencies": {
+    "webpack": "^3.5.5"
+  }
+}
