@@ -27,7 +27,8 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10",
-    "style-loader": "^0.18.2"
+    "style-loader": "^0.18.2",
+    "svg-react-loader": "^0.4.4"
   },
   "devDependencies": {
     "webpack": "^3.5.5"

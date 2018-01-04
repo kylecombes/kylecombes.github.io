@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Roboto');
+
+* {
+    overflow: auto;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    color: white;
+    font-family: Roboto, "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #2c2c2c;
+    height: 100%;
+}
+
+a {
+    color: white;
+    text-decoration: unset;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#app {
+    width: 100%;
+}
+
+section.element {
+    margin: 0;
+}
+
+.header-wrapper,
+main,
+footer {
+    /*max-width: 1200px;*/
+    margin: 0 auto;
+}
+
+.element-open,
+.element-open::before,
+.element-open::after,
+.element-close,
+.element-close::before,
+.element-close::after {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 110%;
+    text-transform: lowercase;
+}
+
+section.element > .element-open::before {
+    content: '<';
+}
+
+.element-close::before {
+    content: '</';
+}
+
+.element-open::after,
+.element-close::after{
+    content: '>';
+}
+
+section.element.level-1 {
+    background-color: #2c2c2c;
+}
+
+section.element > span {
+    font-size: 140%;
+}
+
+section.element.level-1 > span {
+    color: #666;
+}
+
+section.element.biography {
+    background-color: #383838;
+}
+
+section.element.level-2 > span {
+    padding: 2rem;
+    padding-left: 4rem;
+    color: #7d7f81;
+
+}
+
+section.element.level-3 {
+    padding-left: 6rem;
+    background-color: #3d87d3;
+}
+
+
+.element > span {
+    display: block;
+}
+
+.element.portfolio {
+    /*     background-color: lightblue; */
+}
+
+.element.portfolio > span {
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+.element.biography .element-contents,
+.element.position .element-contents{
+    margin: 0 3rem;
+}
+
+.element.biography .portrait-image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.element.biography .portrait-image {
+    max-width: 15rem;
+}
+
+.element.biography .name-title-container {
+    font-size: 150%;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.element.biography .name-title-container > * {
+    float: left;
+}
+
+.element.biography .name-title-container .name {
+    font-size: 150%;
+    letter-spacing: 6px;
+    text-align: right;
+    width: 49%;
+}
+
+/* .element.biography .name-title-container .name::after {
+    content: '|';
+    margin-left: 0.3em;
+} */
+
+.element.biography .name-title-container .title {
+    font-size: 120%;
+    letter-spacing: 3px;
+    width: 49%;
+    /*! margin-left: 0.3em; */
+}
+
+.element.biography .name-title-container .divider {
+    content: '|';
+    text-align: center;
+    font-size: 140%;
+    width: 2%;
+    height: 100%;
+}
+
+.links-container a {
+    margin: 0 1rem;
+}
+
+.links-container svg {
+    width: 2rem;
+    fill: #888;
+    -webkit-transition: fill 0.2s ease;
+    -moz-transition: fill 0.2s ease;
+    -o-transition: fill 0.2s ease;
+    transition: fill 0.2s ease;
+}
+
+.links-container a:hover svg {
+    fill: #dedede;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.element.position {
+    border-bottom: 1px solid #106fd1;
+}
+
+.element.position > span {
+    padding: 1rem 0;
+    color: #dadada;
+}
+
+.element.position .position-header-text {
+    float: left;
+}
+
+.element.position .element-contents {
+    padding: 1rem 9rem 0 0;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.element.position .title {
+    font-size: 160%;
+    display: inline-block;
+}
+
+.element.position .role {
+    font-size: 100%;
+    font-weight: bold;
+    display: block;
+}
+
+.element.position .location,
+.element.position .period {
+    display: inline-block;
+    font-size: 80%;
+    margin-top: 0.3em;
+}
+
+.element.position .location::after {
+    content: ' |';
+}
+
+.element.position .company-logo {
+    float: right;
+    max-height: 7em;
+    overflow: hidden;
+}
+
+.element.position .company-logo svg {
+    height: 7em;
+}
+
+svg.owl-logo {
+    fill: white;
+}
+
+svg.owl-logo:hover {
+    fill: #ed037c;
+}
+
+.element.position .description {
+    margin-top: 1em;
+    font-size: 120%;
+    line-height: 150%;
+}
+
+.element.position .technologies {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.element.position .technologies img {
+    max-height: 2rem;
+    margin: 0 1.3em;
+}
+
+.technologies a {
+    margin: 0 1em;
+}
+
+.technologies svg {
+    height: 4em;
+    fill: #dedede;
+    transition: fill 0.3s ease;
+}
+
+.technologies svg.node-logo:hover {
+    fill: #689f63;
+}
+
+.technologies svg.redux-logo:hover {
+    fill: #764ABC;
+}
+
+.technologies svg.react-logo:hover {
+    fill: #61dafb;
+}

@@ -4,7 +4,7 @@ const APP_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'dist');
 
 module.exports = {
-    devtool: 'source-map',
+    devtool: 'sourcemap',
     entry: {
         'build/bundle' : path.resolve(APP_DIR, 'index.jsx'),
     },
@@ -27,5 +27,8 @@ module.exports = {
                 loader: 'style-loader!css-loader'
             },
         ]
+    },
+    resolve: {
+        extensions: ['.js', '.jsx']
     }
 };
