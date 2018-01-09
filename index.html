@@ -2,13 +2,513 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Kyle Combes</title>
-    <link rel="stylesheet" href="content/style.css">
+    <title>Kyle Combes | Software Developer</title>
+    <!------ Begin PhotoSwipe ------>
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="assets/photoswipe/photoswipe.css">
+    <link rel="stylesheet" href="assets/photoswipe/default-skin/default-skin.css">
+
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+         In the folder of skin CSS file there are also:
+         - .png and .svg icons sprite,
+         - preloader.gif (for browsers that do not support CSS animations) -->
+    <!--<link rel="stylesheet" href="assets/css/default-skin.css">-->
+
+    <!-- Core JS file -->
+    <script src="assets/photoswipe/photoswipe.min.js"></script>
+
+    <!-- UI JS file -->
+    <script src="assets/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!------ End PhotoSwipe ------>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<main id="app">
-
-</main>
-<script type="text/javascript" src="dist/bundle.js"></script>
+    <!-- Begin opening section with name, image, and links -->
+    <section class="opening">
+        <div class="section-content">
+            <img src="assets/bitmap/portrait.png" class="portrait-image"/>
+            <div class="name-title-container">
+                <span class="name">Kyle Combes</span>
+                <span class="title">Software Developer</span>
+            </div>
+            <div class="links-container">
+                <a href="https://github.com/kylecombes" title="Find me on GitHub">
+                    <img src="assets/svg/github.svg" alt="GitHub logo" />
+                </a>
+                <a href="https://www.linkedin.com/in/kcombes/" title="Find me on LinkedIn">
+                    <img src="assets/svg/linkedin.svg" alt="LinkedIn logo" />
+                </a>
+            </div>
+            <div class="scroll-to-content">
+                <img src="assets/svg/arrow-down.svg" title="Scroll to see more" onclick="window.scroll({top: window.innerHeight, behavior: 'smooth'})"/>
+            </div>
+        </div>
+    </section>
+    <!-- End opening section with name, image, and links -->
+    <!-- Begin mission statement -->
+    <section class="mission">
+        <div class="section-content">
+            <h2 class="section-title">Mission</h2>
+            <p>My mission in life is to...</p>
+        </div>
+    </section>
+    <!-- End mission statement -->
+    <!-- Begin projects list -->
+    <section class="projects">
+        <div class="section-content">
+            <h2 class="section-title light">Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/oars/OARS-logo-pink.png" itemprop="contentUrl" data-size="720x424">
+                                <img src="http://content.kylecombes.com/portfolio/oars/OARS-logo-pink.png" itemprop="thumbnail" alt="OARS logo" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Autonomous sailboat</span>
+                        <div class="description"><p>As the Electrical and Software Subteam Lead for
+                            <a href="https://www.olinaquabots.com/" target="_blank" title="View the OARS website">Olin Aquatic Robotic Systems</a>,
+                            I am responsible for directing the development of an autonomous sailboat’s software
+                            systems and ensuring mechanical, electrical, and software systems integrate seamlessly. We
+                            are currently on-track to reach our goal of making a sailboat autonomously sail around a
+                            nearby lake by summer.</p>
+                        </p>
+                        </div>
+                        <div class="technologies">
+                            <a href="http://python.org/">
+                                <img src="assets/svg/python.svg" title="Python">
+                            </a>
+                            <a href="http://ros.org/" style="max-width: 40%;">
+                                <img src="assets/svg/ros.svg" title="ROS">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/bocs/BOCS-header.jpg" itemprop="contentUrl" data-size="1363x719">
+                                <img src="http://content.kylecombes.com/portfolio/bocs/BOCS-header.jpg" itemprop="thumbnail" alt="BOCS logo" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Extensible puzzle box</span>
+                        <div class="description"><p> <a href="http://poe.olin.edu/2017/Poezzle/" target="_blank" title="View the project website">BOCS</a>
+                            is an extensible puzzle box, from both the hardware and software standpoints. Puzzles can be
+                            written in Python without any knowledge of the intricate workings of the BOCS. High-level
+                            logic is run on a Raspberry Pi Zero W, with Arduinos in responsible for controlling most I/O.</p>
+                            <p>As the sole CS person working on BOCS, I architected
+                            <a href="https://github.com/kylecombes/bocs" target="_blank" title="View BOCS on GitHub">the software system</a>, the including
+                            inter-device communication protocol, and wrote the vast majority of the code.</p>
+                        </div>
+                    </div>
+                    <div class="technologies">
+                        <a href="http://arduino.cc/">
+                            <img src="assets/svg/arduino.svg" title="Arduino">
+                        </a>
+                        <a href="http://python.org/">
+                            <img src="assets/svg/python.svg" title="Python">
+                        </a>
+                        <a href="http://nodejs.org/">
+                            <img src="assets/svg/node.svg" title="Node.js">
+                        </a>
+                        <a href="https://reactjs.org/">
+                            <img src="assets/svg/react.svg" title="React">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/abe/ABE-web-frontend.png" itemprop="contentUrl" data-size="1920x1080">
+                                <img src="http://content.kylecombes.com/portfolio/abe/ABE-web-frontend.png" itemprop="thumbnail" alt="events.olin.build screenshot" />
+                            </a>
+                            <figcaption itemprop="caption description">I led the UI design effort, as well as the charge
+                                to use React and Redux.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Community event repository</span>
+                        <div class="description"><p>The Amorphous Blob of Events (ABE) is a project developed by Olin
+                            College students in conjunction with the Olin College Library. It is an event repository for
+                            communities, with a RESTful API and as well as a "traditional" calendar frontend.</p>
+                            <p>As a member of the original frontend team, I was responsible for researching and selecting
+                            a JavaScript framework (React), learning it, and scaffolding the transition of our early,
+                            jQuery-based code to React. I also handled most of the UI design and construction and
+                            eventually migrated our application state over to Redux.</p>
+                            <p>The calendar view itself (the part you’d print out and stick on the wall) is also of my
+                                design. After originally using the jQuery-based FullCalendar, we decided a non-React
+                                calendar component was getting in our way too much. When no satisfying React calendar
+                                component could be found, I created my own.</p>
+                            <p>Check out the calendar at <a href="https://events.olin.build" target="_blank">events.olin.build</a>,
+                                or view <a href="https://github.com/olinlibrary/abe-web" target="_blank">the frontend code</a>,
+                                <a href="https://github.com/olinlibrary/abe" target="_blank">the backend code</a>, or my
+                                <a href="https://github.com/kylecombes/ultra-responsive-calendar/" target="_blank">React
+                                calendar component</a> on GitHub.</p>
+                        </div>
+                    </div>
+                    <div class="technologies">
+                        <a href="https://reactjs.org/">
+                            <img src="assets/svg/react.svg" title="React">
+                        </a>
+                        <a href="https://redux.js.org/">
+                            <img src="assets/svg/redux.svg" title="Redux">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/projects/hereiam/main-overview.png" itemprop="contentUrl" data-size="1256x924">
+                                <img src="http://content.kylecombes.com/projects/hereiam/main-overview.png" itemprop="thumbnail" alt="HereIAm network dashboard" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Networked device overview</span>
+                        <div class="description"><p>Network-connected headless devices (e.g. Raspberry Pis with no
+                            displays) are often difficult to connect to over WiFi. Static IP addresses can be laborious
+                            to configure and, when on congested networks, address conflicts often arise. DHCP solves
+                            those problems, but there’s no easy way to know what IP address a device has been given by
+                            a router.</p>
+                            <p><a href="https://github.com/kylecombes/HereIAm" target="_blank" title="View HereIAm on GitHub">HereIAm</a>
+                                provides an all-in-one network status reporting solution to address this problem.
+                                A tiny client Python script reports the network status, including IP address and WiFi
+                                signal strength, to a server. A React web app then connects to this server (over
+                                WebSockets for live updating) and displays the reported device information.</p>
+                        </div>
+                    </div>
+                    <div class="technologies">
+                        <a href="https://reactjs.org/">
+                            <img src="assets/svg/react.svg" title="React">
+                        </a>
+                        <a href="http://nodejs.org/">
+                            <img src="assets/svg/node.svg" title="Node.js">
+                        </a>
+                        <a href="http://python.org/">
+                            <img src="assets/svg/python.svg" title="Python">
+                        </a>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/qea-babywarmer/Heating-graph.png" itemprop="contentUrl" data-size="1096x797">
+                                <img src="http://content.kylecombes.com/portfolio/qea-babywarmer/Heating-graph.png" itemprop="thumbnail" alt="Babywarming heating graph" />
+                            </a>
+                            <figcaption itemprop="caption description">Our baby controller warmed the baby to within
+                            our desired temperature range within 20 minutes while minimizing power draw for energy-
+                            insecure regions. See the report for more details.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Low-power baby warmer</span>
+                        <div class="description"><p>
+                            As part of our module on systems and controls in Quantitative Engineering Analysis, my
+                            partner and I designed and analyzed the control system for an infant-warming bassinet. Our
+                            goal was to minimize heating time while keeping power draw below a certain threshold, such
+                            that it would not cripple electrical systems in developing regions of the world. We were
+                            able to prescribe PI control parameters to use to keep the max power draw below the desired
+                            threshold.</p>
+                            <p>View our <a href="http://content.kylecombes.com/portfolio/qea-babywarmer/QEA_Babywarmer_Report.pdf" target="_blank">full report</a> for more details.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="gallery lidar-mapping" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/qea-neato-lidar/Mapped_play_pen.png" itemprop="contentUrl" data-size="990x874">
+                                <img src="http://content.kylecombes.com/portfolio/qea-neato-lidar/Mapped_play_pen.png" itemprop="thumbnail" alt="LIDAR map" />
+                            </a>
+                            <figcaption itemprop="caption description">Multiple scans from the LIDAR were taken, translated
+                                and/or rotated to account for the robot's location and orientation, and then overlayed.</figcaption>
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/qea-neato-lidar/sweep_robot.png" itemprop="contentUrl" data-size="1284x900">
+                                <img src="http://content.kylecombes.com/portfolio/qea-neato-lidar/sweep_robot_thumb.png" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">We also used the LIDAR to create a potential field
+                                map of the playpen, with obstacles given high potentials and our goal location pre-programmed
+                                as a very low potential. We then used gradient descent to navigate to the goal location while
+                                avoiding obstacles.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Mapping and navigation using LIDAR</span>
+                        <div class="description">
+                            <p>For practice with reference frames, autonomous navigation, and obstacle
+                            avoidance, my partner and I used the LIDAR on a robotic Neato vacuum to complete a set of
+                            challenges. These challenges included mapping a playpen by combining scans taken at multiple
+                            locations, using the LIDAR to generate a potential field map around the robot and navigating to the
+                            “valley” (a hardcoded location where a bucket had been placed) using gradient descent, and
+                            attempting to autonomously locate and navigate to the circular bucket. Unfortunately, the LIDAR’s
+                            resolution provided inadequate for circle detection more than a few feet away from the bucket, and
+                            thus we were unable to successfully implement fully unguided navigation.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="gallery eigenfaces" itemscope itemtype="http://schema.org/ImageGallery">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/qea-eigenfaces/Average-eigenface.jpg" itemprop="contentUrl" data-size="554x438">
+                                <img src="http://content.kylecombes.com/portfolio/qea-eigenfaces/Average-eigenface.jpg" itemprop="thumbnail" alt="Average eigenface" />
+                            </a>
+                            <figcaption itemprop="caption description">Averaging the eigenface weights from the class's
+                                photos and projecting the result back into image space yielded this image.</figcaption>
+                        </figure>
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/qea-eigenfaces/Person-in-eigenspace.jpg" itemprop="contentUrl" data-size="557x442">
+                                <img src="http://content.kylecombes.com/portfolio/qea-eigenfaces/Person-in-eigenspace.jpg" itemprop="thumbnail" alt="Image description" />
+                            </a>
+                            <figcaption itemprop="caption description">Here we projected the data from one face onto the
+                                basis vectors derived using eigenfaces.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Facial recognition using eigenfaces</span>
+                        <div class="description"><p>As an application of linear algebra, my partner and I implemented the
+                            <a href="https://en.wikipedia.org/wiki/Eigenface" title="Eigenface | Wikipedia" target="_blank">eigenfaces approach to facial recognition</a>.
+                            Though the photos of faces had to be taken in the same lighting conditions and cropped the
+                            same, the approach did work remarkably well, with a success rate of 91%.</p>
+                            <p>My partner and I attempted to also implement a network capable of facial recognition, but we ran
+                                out of time. View our <a href="http://content.kylecombes.com/portfolio/qea-eigenfaces/QEA-facial-recognition-report.pdf" target="_blank">full report</a> for more details.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/qea-boat/Full-boat-render.JPG" itemprop="contentUrl" data-size="2000x1160">
+                                <img src="http://content.kylecombes.com/portfolio/qea-boat/Full-boat-render.JPG" itemprop="thumbnail" alt="Average eigenface" />
+                            </a>
+                            <figcaption itemprop="caption description">A Solidworks rendering of the boat hull. The hull sections,
+                            keel, and deck were defined using parametric curves. These specific curves were decided upon
+                            after many AVS calculations in Mathematica. The ballast can be seen at the bottom.</figcaption>
+                        </figure>
+                    </div>
+                    <div class="details">
+                            <span class="title">Boat hull design</span>
+                        <div class="description"><p>When learning multivariable calculus, my partner and I designed and
+                            built a small boat meeting a specified criterion: it had to have an
+                            <a href="http://sailskills.co.uk/Stability/sailskills_stability_stability_explained_AVS.html" target="_blank">angle of vanishing stability</a>
+                            (AVS) of between 120 and 140 degrees. After modeling various hull shapes and analyzing them
+                            in Mathematica, we CAD-ed hull sections, laser cut them out of hardboard, and assembled and
+                            demoed the boat without any testing. It worked perfectly, proving our AVS calculation
+                            accurate to within two degrees.
+                            View our <a href="http://content.kylecombes.com/portfolio/qea-boat/QEA_M1_Boat_Report_and_Letter_to_Editor.pdf" target="_blank">full report</a> for more details.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="featured-image">
+                        <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                            <a href="http://content.kylecombes.com/portfolio/modsim-billiards/Geddes-Billiards.png" itemprop="contentUrl" data-size="2000x1500">
+                                <img src="http://content.kylecombes.com/portfolio/modsim-billiards/Geddes-Billiards.png" itemprop="thumbnail" alt="Average eigenface" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="details">
+                        <span class="title">Billiards simulator</span>
+                        <div class="description"><p>
+                            Modeling and Simulation concluded, for my partner and me, with a billiard kinetics simulator.
+                            Inspired by our pool shark professor, we modeled the physics of the game to determine how
+                            our professor could make a seemingly impossible shot. Check out
+                            <a href="http://content.kylecombes.com/portfolio/modsim-billiards/Geddes-Billiards.pdf">the poster</a>
+                            to see how it could be done.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End projects list -->
+    <!-- Begin work experience -->
+    <section class="experience">
+        <div class="section-content">
+            <h2 class="section-title">Experience</h2>
+            <div class="position">
+                <div class="position-header">
+                    <div class="position-header-text">
+                        <a class="title" href="http://www.modkit.com/" title="Modkit">Modkit</a>
+                        <span class="role">Software Development Intern</span>
+                        <span class="location">Cambridge, MA</span>
+                        <span class="period">Jul 2017 - Present</span>
+                    </div>
+                    <a class="company-logo" href="http://www.modkit.com/">
+                        <img src="https://www.vexrobotics.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/m/o/modkit_for_vex_logo-color_1.png"/>
+                    </a>
+                </div>
+                <div class="description">
+                    <p>Assisting in development of next-generation programming environment for VEX Robotics enthusiasts.
+                        Details subject to NDA.</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="position-header">
+                    <div class="position-header-text">
+                        <a class="title" href="http://www.rewritethelibrary.org/summer17/index.html" title="Olin Workshop on the Library (OWL)">Olin College of Engineering Library</a>
+                        <span class="role">Software Development Intern</span>
+                        <span class="location">Needham, MA</span>
+                        <span class="period">June 2017 - Aug 2017</span>
+                    </div>
+                    <a class="company-logo" href="http://www.olin.edu/">
+                        <img src="assets/svg/owl-olin.svg"/>
+                    </a>
+                </div>
+                <div class="description">
+                    <p>Assisting in development of next-generation programming environment for VEX Robotics enthusiasts.
+                        Details subject to NDA.</p>
+                </div>
+            </div>
+            <div class="position">
+                <div class="position-header">
+                    <div class="position-header-text">
+                        <a class="title" href="http://help.kylecombes.com/" title="Kyle Combes | Tech Junkie">Sole Proprietor &amp; Independent Contractor</a>
+                        <span class="role">Computer Service Technician and Website Developer</span>
+                        <span class="location">North Kohala, HI</span>
+                        <span class="period">June 2012 - Aug 2016</span>
+                    </div>
+                    <a class="company-logo" href="http://help.kylecombes.com/">
+                        <img src="http://content.kylecombes.com/portfolio/Tech-Junkie-logo.png"/>
+                    </a>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Designed websites for local businesses (primarily using WordPress)</li>
+                        <li>Serviced PC and Mac computer systems as well as associated peripherals for all types of users</li>
+                        <li>Learned how each generation interfaces with technology, and tailored tutorials based on
+                            client’s technical aptitude and familiarity with product</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="position">
+                <div class="position-header">
+                    <div class="position-header-text">
+                        <a class="title" href="http://www.pcbweb.com/" title="PCBWeb">Aspen Labs</a>
+                        <span class="role">Software Development Intern</span>
+                        <span class="location">Kapa&#8216;au, HI</span>
+                        <span class="period">Feb 2013 - Nov 2013</span>
+                    </div>
+                    <a class="company-logo" href="http://www.pcbweb.com/">
+                        <img src="http://content.kylecombes.com/portfolio/PCBWeb-logo.svg"/>
+                    </a>
+                </div>
+                <div class="description">
+                    <ul>
+                        <li>Assisted in development of Silverlight-based PCB CAD system</li>
+                        <li>Worked primarily on UI (C# and XAML), manipulating XML-based data structures, and dealing
+                            with client-server interaction</li>
+                        <li>Built program capable of parsing and solving mathematical expressions entered into command
+                            line</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End work experience -->
+    <!-- Begin education -->
+    <section class="education">
+        <div class="section-content">
+            <h2 class="section-title light">Education</h2>
+            <div class="education-details">
+                <img class="logo" src="http://content.kylecombes.com/portfolio/olin-college-logo.svg" alt="Olin College of Engineering logo"}/>
+                <span class="name">Franklin W. Olin College of Engineering</span>
+                <span>Engineering degree candidate | Concentration: computing | Class of 2020</span>
+            </div>
+        </div>
+    </section>
+    <!-- End education -->
+    <!-- Begin connect -->
+    <section class="connect">
+        <div class="section-content">
+            <h2 class="section-title">Connect</h2>
+            <div class="connect-item-container">
+                <div class="connect-item">
+                    <img src="assets/svg/envelope.svg">
+                    <span><a title="Email me" id="email-field"></a></span>
+                </div>
+                <div class="connect-item">
+                    <img src="assets/svg/phone.svg">
+                    <span><a title="Call me" id="phone-field"></a></span>
+                </div>
+                <div class="connect-item">
+                    <img src="assets/svg/linkedin.svg">
+                    <span><a href="http://linkedin.com/in/kcombes/" title="Connect with me on LinkedIn" target="_blank">linkedin.com/in/kcombes</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End connect -->
+    <footer>
+        <div class="section-content">
+            <p>Copyright &copy; 2018 Kyle Combes. All Rights Reserved.</p>
+            <p><a href="https://www.freepik.com/free-vector/100-universal-icons_993473.htm" title="Graphic by 0melapics">Envelope icon</a> and
+            <a href="https://www.freepik.com/free-vector/phone-icons_904111.htm" title="Graphic by ibrandify">phone icon</a>
+                used with permission. Logos are property of their respective owner(s).</p>
+        </div>
+    </footer>
+    <!-- Begin PhotoSwipe -->
+    <script type="text/javascript">
+        window.onload = () => {
+            initPhotoSwipeFromDOM('.project');
+            const emailField = window.document.querySelector('#email-field');
+            emailField.setAttribute('href', emailLink );
+            emailField.innerText = emailDisplay;
+            const phoneField = window.document.querySelector('#phone-field');
+            phoneField.setAttribute('href', phoneLink);
+            phoneField.innerText = phoneDisplay;
+        }
+    </script>
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <!-- Background of PhotoSwipe.
+             It's a separate element as animating opacity is faster than rgba(). -->
+        <div class="pswp__bg"></div>
+        <!-- Slides wrapper with overflow:hidden. -->
+        <div class="pswp__scroll-wrap">
+            <!-- Container that holds slides.
+                PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                Don't modify these 3 pswp__item elements, data is added later on. -->
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <!--  Controls are self-explanatory. Order can be changed. -->
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End PhotoSwipe --->
 </body>
 </html>

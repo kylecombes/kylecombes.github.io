@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 16">
+  <style type="text/css">
+    .arrow {
+      animation: pulse 3s infinite;
+    }
+    @keyframes pulse {
+      0% { stroke: #eee }
+      50% { stroke: #444 }
+      100% { stroke: #eee }
+    }
+  </style>
+  <g transform="translate(0,-281)">
+    <path class="arrow" style="fill:none;stroke:#d6d6d6;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 49.69639,281.42749 25.000007,296.41508 0.30360944,281.42749"/>
+  </g>
+</svg>

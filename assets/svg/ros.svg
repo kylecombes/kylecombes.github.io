@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 182.439 48.78" height="auto">
+  <g transform="translate(-1.284 -1.284) scale(1.2837)" stroke-width=".779" fill="#888">
+    <circle r="4" cy="5" cx="5"/>
+    <circle r="4" cy="5" cx="20"/>
+    <circle r="4" cy="5" cx="35"/>
+    <circle r="4" cy="20" cx="5"/>
+    <circle r="4" cy="20" cx="20"/>
+    <circle r="4" cy="20" cx="35"/>
+    <circle r="4" cy="35" cx="5"/>
+    <circle r="4" cy="35" cx="20"/>
+    <circle r="4" cy="35" cx="35"/>
+  </g>
+  <g stroke-width="1.072" stroke="#888" fill="#888">
+    <path d="M57.767-30.582c23.303 0 23.508 44.166 0 44.166-22.114 0-23.303-44.166 0-44.166z" fill="none" stroke-width="7.321" stroke-linecap="square" transform="matrix(.93235 0 0 .93323 69.904 32.211)"/>
+    <path d="M116.956-24.334C95.157-44.216 77.925-12.77 104.042-8.972 130.16-5.174 112.23 27.265 88.188 6.88" fill="none" stroke-width="7.321" transform="matrix(.93235 0 0 .93323 69.904 32.211)"/>
+    <path d="M-1.957-6.884c8.887 0 8.355.355 15.507 0 15.532-.337 14.639-23.698 0-23.698-1.514.19-8.598 0-18.578 0v44.1" fill="none" stroke-width="7.321" stroke-linecap="square" transform="matrix(.93235 0 0 .93323 69.904 32.211)"/>
+    <path d="M9.826-4.268c.523.697 10.592 20.713 10.592 20.713h7.143L16.66-4.987z" stroke-width="1.046" transform="matrix(.93235 0 0 .93323 69.904 32.211)"/>
+  </g>
+</svg>
