@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Roboto|Lato:400i');
 
 * {
     box-sizing: border-box;
@@ -211,6 +211,12 @@ li {
 
 .mission p {
     text-align: center;
+    font-size: 2em;
+    font-style: italic;
+    font-family: Lato, Roboto, Helvetica sans-serif;
+    max-width: 30em;
+    margin: 2em auto;
+    line-height: 2em;
 }
 
 .projects {
@@ -241,6 +247,7 @@ li {
     border: 1px solid #ccc;
     color: #444;
     overflow: auto;
+    -webkit-column-break-inside: avoid;
 }
 
 .project:first-child {
