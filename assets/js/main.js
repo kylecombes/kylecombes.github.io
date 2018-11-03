@@ -186,7 +186,9 @@ function initPhotoSwipeFromDOM(projectSelector) {
     }
 }
 
-var emailDisplay = "kyle.combes" + "@" + "students.olin.edu";
+var emailDisplay = "kcombes"
+  + "@"
+  + "olin.edu";
 var emailLink = "mailto:<Kyle Combes> " + emailDisplay;
 var phoneDisplay = "(808) " + "989-" + "4355";
 var phoneLink = "tel:808" + "989" + "4355";
